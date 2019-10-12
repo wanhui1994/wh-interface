@@ -1,0 +1,16 @@
+config:
+    name: create users with uid
+    base_url: "http://www.cfcc.cc"
+
+testcases:
+  用户登录-账号密码正确:
+    testcase: testcases/login.yaml
+    variables:
+      user: "15011530850"
+      psw: "123456"
+
+  用户登录-账号为空:
+    testcase: testcases/login.yaml
+    variables:
+      user: ""
+      psw: "123456"
