@@ -1,0 +1,44 @@
+- config:
+    name: "商家登录"
+    id: 002
+    variables:
+      url: /app/login/stationlogin
+      t: 5
+      path: user.csv
+      login_tag: 2
+
+- test:
+    name: 成功登录
+    api: api/login.yaml
+    variables:
+        user: ${get_csv($path,6,0)}
+        psw:  ${get_csv($path,6,1)}
+    setup_hooks:
+      - ${slepp_t($t)}
+    validate:
+    - eq: ["status_code", 200]
+    - eq: ["content.data.info", 请求成功]
+
+- test:
+    name: 成功登录
+    api: api/login.yaml
+    variables:
+        user: ${get_csv($path,7,0)}
+        psw:  ${get_csv($path,7,1)}
+    setup_hooks:
+      - ${slepp_t($t)}
+    validate:
+    - eq: ["status_code", 200]
+    - eq: ["content.data.info", 登录手机号格式不正确]
+
+- test:
+    name: 成功登录
+    api: api/login.yaml
+    variables:
+        user: ${get_csv($path,8,0)}
+        psw:  ${get_csv($path,8,1)}
+    setup_hooks:
+      - ${slepp_t($t)}
+    validate:
+    - eq: ["status_code", 200]
+    - eq: ["content.data.info", 请输入正确的用户名和密码]

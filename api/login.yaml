@@ -1,6 +1,6 @@
 name: login
 request:
-    url: /app/login/oriloginapp
+    url: $url
     method: POST
     headers:
         Content-Type: "application/x-www-form-urlencoded"
@@ -11,7 +11,7 @@ request:
         device: ${ENV(device)}
         dpmd5time: ${ENV(dpmd5time)}
         dptime: ${ENV(dptime)}
-        login_tag: ${ENV(login_tag)}
+        login_tag: $login_tag
         now_version: ${ENV(now_version)}
         oper_terminal: ${ENV(oper_terminal)}
         turnversion: ${ENV(turnversion)}

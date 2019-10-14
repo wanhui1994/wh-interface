@@ -1,0 +1,2425 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      line-height: 20px;
+      text-align: left;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      line-height: 25px;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+    .popup .separator {
+      color:royalblue
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2019-10-14 12:18:55</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">22.014 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 2.2.6 </td>
+      <td>CPython 3.7.1 </td>
+      <td colspan="2">Windows-7-6.1.7601-SP1</td>
+    </tr>
+    <tr>
+      <th>STAT</th>
+      <th colspan="2">TESTCASES (success/fail)</th>
+      <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+      <td>total (details) =></td>
+      <td colspan="2">2 (1/1)</td>
+      <td colspan="2">8 (6/2/0/0)</td>
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>用户登录</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <td>TOTAL: 5</td>
+      <td>SUCCESS: 5</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_1_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">成功登录</td>
+      <td style="text-align:center;width:6em;">851.05 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_1_1">log-1</a>
+        <div id="popup_log_1_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 成功登录</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.cfcc.cc/app/login/oriloginapp
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Xiaopin_New/5.1.3 (iPhone; iOS 12.0.1; Scale/3.00)
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/x-www-form-urlencoded
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 210
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          login_pw=123456&user_phone=15011530850&device=003076DA-04E8-46B9-ACE6-0905EF47AC77&dpmd5time=b99d998e709ae9514427bf919dcbe568&dptime=1570590732.020264&login_tag=1&now_version=5.1.3&oper_terminal=1&turnversion=A
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.cfcc.cc/app/login/oriloginapp
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'SERVERID': 'db8459387d4f2fc1a0db5d593455728e|1571026735|1571026735'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Mon, 14 Oct 2019 04:18:56 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>Set-Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026735|1571026735;Path=/
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;data&#39;: {&#39;code&#39;: &#39;1&#39;, &#39;datavalue&#39;: {&#39;alipay_tag&#39;: &#39;1&#39;, &#39;user_tag&#39;: 0, &#39;placeFlagStr&#39;: &#39;您手机已经有订单，请联系门店经营者&#39;, &#39;user_name&#39;: &#39;15011530850&#39;, &#39;headinfo&#39;: &#39;&#39;, &#39;city_code&#39;: &#39;0551&#39;, &#39;user_equipment&#39;: &#39;003076DA-04E8-46B9-ACE6-0905EF47AC77&#39;, &#39;user_phone&#39;: &#39;15011530850&#39;, &#39;isActivity&#39;: 0, &#39;account_state&#39;: 1, &#39;placeFlag&#39;: &#39;1&#39;, &#39;user_head&#39;: &#39;&#39;, &#39;datalist&#39;: [{&#39;type_tag&#39;: 1, &#39;type_title&#39;: &#39;铅酸电瓶整组&#39;}, {&#39;type_tag&#39;: 5, &#39;type_title&#39;: &#39;锂电电瓶&#39;}, {&#39;type_tag&#39;: 6, &#39;type_title&#39;: &#39;铅酸电瓶单只&#39;}], &#39;token&#39;: &#39;702b6210a7bb48a69ac18d46a3c92d0d&#39;, &#39;weixin_tag&#39;: &#39;1&#39;, &#39;weixin_OPENID&#39;: &#39;&#39;, &#39;deposit_flag&#39;: 1, &#39;alipay_account&#39;: &#39;&#39;, &#39;user_credit&#39;: &#39;100&#39;, &#39;user_id&#39;: &#39;949abfb9423742758d2636fdb6247e98&#39;, &#39;wmlist&#39;: [], &#39;real_tag&#39;: &#39;1&#39;, &#39;invite_code&#39;: &#39;KHGZMW&#39;, &#39;transaction_flag&#39;: 1, &#39;read_aggree&#39;: 1}, &#39;info&#39;: &#39;登录成功！&#39;}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.data.info
+                      </td>
+                      <td>equals</td>
+                      <td>登录成功！</td>
+                      <td>登录成功！</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>787</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>851.05</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>848.974</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_2">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">账号和密码错误</td>
+      <td style="text-align:center;width:6em;">101.01 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_2_1">log-1</a>
+        <div id="popup_log_1_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 账号和密码错误</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.cfcc.cc/app/login/oriloginapp
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Xiaopin_New/5.1.3 (iPhone; iOS 12.0.1; Scale/3.00)
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/x-www-form-urlencoded
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026735|1571026735
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 211
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          login_pw=1234567&user_phone=15011530850&device=003076DA-04E8-46B9-ACE6-0905EF47AC77&dpmd5time=b99d998e709ae9514427bf919dcbe568&dptime=1570590732.020264&login_tag=1&now_version=5.1.3&oper_terminal=1&turnversion=A
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.cfcc.cc/app/login/oriloginapp
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'SERVERID': 'db8459387d4f2fc1a0db5d593455728e|1571026741|1571026735'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Mon, 14 Oct 2019 04:19:01 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>Set-Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026741|1571026735;Path=/
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;data&#39;: {&#39;code&#39;: &#39;-5&#39;, &#39;info&#39;: &#39;请输入正确的用户名和密码&#39;}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.data.info
+                      </td>
+                      <td>equals</td>
+                      <td>请输入正确的用户名和密码</td>
+                      <td>请输入正确的用户名和密码</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>68</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>101.01</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>99.678</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_3">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">密码为空</td>
+      <td style="text-align:center;width:6em;">65.00 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_3_1">log-1</a>
+        <div id="popup_log_1_3_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_3_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 密码为空</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.cfcc.cc/app/login/oriloginapp
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Xiaopin_New/5.1.3 (iPhone; iOS 12.0.1; Scale/3.00)
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/x-www-form-urlencoded
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026741|1571026735
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 204
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          login_pw=&user_phone=15011530850&device=003076DA-04E8-46B9-ACE6-0905EF47AC77&dpmd5time=b99d998e709ae9514427bf919dcbe568&dptime=1570590732.020264&login_tag=1&now_version=5.1.3&oper_terminal=1&turnversion=A
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.cfcc.cc/app/login/oriloginapp
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'SERVERID': 'db8459387d4f2fc1a0db5d593455728e|1571026746|1571026735'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Mon, 14 Oct 2019 04:19:06 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>Set-Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026746|1571026735;Path=/
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;data&#39;: {&#39;code&#39;: &#39;-5&#39;, &#39;info&#39;: &#39;请输入正确的用户名和密码&#39;}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.data.info
+                      </td>
+                      <td>equals</td>
+                      <td>请输入正确的用户名和密码</td>
+                      <td>请输入正确的用户名和密码</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>68</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>65.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>64.42</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_4">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">密码错误</td>
+      <td style="text-align:center;width:6em;">30.00 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_4_1">log-1</a>
+        <div id="popup_log_1_4_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_4_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 密码错误</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.cfcc.cc/app/login/oriloginapp
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Xiaopin_New/5.1.3 (iPhone; iOS 12.0.1; Scale/3.00)
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/x-www-form-urlencoded
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026746|1571026735
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 207
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          login_pw=000&user_phone=15011530850&device=003076DA-04E8-46B9-ACE6-0905EF47AC77&dpmd5time=b99d998e709ae9514427bf919dcbe568&dptime=1570590732.020264&login_tag=1&now_version=5.1.3&oper_terminal=1&turnversion=A
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.cfcc.cc/app/login/oriloginapp
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'SERVERID': 'db8459387d4f2fc1a0db5d593455728e|1571026751|1571026735'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Mon, 14 Oct 2019 04:19:11 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>Set-Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026751|1571026735;Path=/
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;data&#39;: {&#39;code&#39;: &#39;-5&#39;, &#39;info&#39;: &#39;请输入正确的用户名和密码&#39;}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.data.info
+                      </td>
+                      <td>equals</td>
+                      <td>请输入正确的用户名和密码</td>
+                      <td>请输入正确的用户名和密码</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>68</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>30.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>28.772</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_5">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">账号为空</td>
+      <td style="text-align:center;width:6em;">135.01 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_5_1">log-1</a>
+        <div id="popup_log_1_5_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_5_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 账号为空</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.cfcc.cc/app/login/oriloginapp
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Xiaopin_New/5.1.3 (iPhone; iOS 12.0.1; Scale/3.00)
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/x-www-form-urlencoded
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026751|1571026735
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 200
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          login_pw=123456&user_phone=+&device=003076DA-04E8-46B9-ACE6-0905EF47AC77&dpmd5time=b99d998e709ae9514427bf919dcbe568&dptime=1570590732.020264&login_tag=1&now_version=5.1.3&oper_terminal=1&turnversion=A
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.cfcc.cc/app/login/oriloginapp
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'SERVERID': 'db8459387d4f2fc1a0db5d593455728e|1571026756|1571026735'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Mon, 14 Oct 2019 04:19:16 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>Set-Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026756|1571026735;Path=/
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;data&#39;: {&#39;code&#39;: &#39;-3&#39;, &#39;info&#39;: &#39;登录手机号格式不正确&#39;}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.data.info
+                      </td>
+                      <td>equals</td>
+                      <td>登录手机号格式不正确</td>
+                      <td>登录手机号格式不正确</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>62</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>135.01</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>134.046</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+  
+  <h3>商家登录</h3>
+  <table id="suite_2" class="details">
+    <tr>
+      <td>TOTAL: 3</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 2</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_2_1">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">成功登录</td>
+      <td style="text-align:center;width:6em;">200.01 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_2_1_1">log-1</a>
+        <div id="popup_log_2_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_2_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 成功登录</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.cfcc.cc/app/login/oriloginapp
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Xiaopin_New/5.1.3 (iPhone; iOS 12.0.1; Scale/3.00)
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/x-www-form-urlencoded
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 210
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          login_pw=123456&user_phone=19900000028&device=003076DA-04E8-46B9-ACE6-0905EF47AC77&dpmd5time=b99d998e709ae9514427bf919dcbe568&dptime=1570590732.020264&login_tag=1&now_version=5.1.3&oper_terminal=1&turnversion=A
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.cfcc.cc/app/login/oriloginapp
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'SERVERID': 'db8459387d4f2fc1a0db5d593455728e|1571026756|1571026756'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Mon, 14 Oct 2019 04:19:16 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>Set-Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026756|1571026756;Path=/
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;data&#39;: {&#39;code&#39;: &#39;-99&#39;, &#39;info&#39;: &#39;非商家入口，请前往商家登录&#39;}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        content.data.info
+                      </td>
+                      <td>equals</td>
+                      <td>请求成功</td>
+                      <td>非商家入口，请前往商家登录</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>72</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>200.01</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>199.262</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_2_1">traceback</a>
+          <div id="popup_attachment_2_1" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_2_1">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;d:\python\lib\site-packages\httprunner\api.py&#34;, line 56, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: 
+validate: content.data.info equals 请求成功(str)	==&gt; fail
+非商家入口，请前往商家登录(str) equals 请求成功(str)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;d:\python\lib\site-packages\httprunner\api.py&#34;, line 58, in test
+    self.fail(str(ex))
+AssertionError: 
+validate: content.data.info equals 请求成功(str)	==&gt; fail
+非商家入口，请前往商家登录(str) equals 请求成功(str)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_2_2">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">成功登录</td>
+      <td style="text-align:center;width:6em;">97.01 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_2_2_1">log-1</a>
+        <div id="popup_log_2_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_2_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 成功登录</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.cfcc.cc/app/login/oriloginapp
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Xiaopin_New/5.1.3 (iPhone; iOS 12.0.1; Scale/3.00)
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/x-www-form-urlencoded
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026756|1571026756
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 200
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          login_pw=123456&user_phone=+&device=003076DA-04E8-46B9-ACE6-0905EF47AC77&dpmd5time=b99d998e709ae9514427bf919dcbe568&dptime=1570590732.020264&login_tag=1&now_version=5.1.3&oper_terminal=1&turnversion=A
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.cfcc.cc/app/login/oriloginapp
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'SERVERID': 'db8459387d4f2fc1a0db5d593455728e|1571026756|1571026756'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Mon, 14 Oct 2019 04:19:16 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>Set-Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026756|1571026756;Path=/
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;data&#39;: {&#39;code&#39;: &#39;-3&#39;, &#39;info&#39;: &#39;登录手机号格式不正确&#39;}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.data.info
+                      </td>
+                      <td>equals</td>
+                      <td>登录手机号格式不正确</td>
+                      <td>登录手机号格式不正确</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>62</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>97.01</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>95.561</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_2_3">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">成功登录</td>
+      <td style="text-align:center;width:6em;">93.01 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_2_3_1">log-1</a>
+        <div id="popup_log_2_3_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_2_3_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: 成功登录</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.cfcc.cc/app/login/oriloginapp
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          POST
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: Xiaopin_New/5.1.3 (iPhone; iOS 12.0.1; Scale/3.00)
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Type</strong>: application/x-www-form-urlencoded
+                          </div>
+                          
+                          <div>
+                            <strong>Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026756|1571026756
+                          </div>
+                          
+                          <div>
+                            <strong>Content-Length</strong>: 207
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          login_pw=123&user_phone=19900000028&device=003076DA-04E8-46B9-ACE6-0905EF47AC77&dpmd5time=b99d998e709ae9514427bf919dcbe568&dptime=1570590732.020264&login_tag=1&now_version=5.1.3&oper_terminal=1&turnversion=A
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.cfcc.cc/app/login/oriloginapp
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {'SERVERID': 'db8459387d4f2fc1a0db5d593455728e|1571026756|1571026756'}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Date</strong>: Mon, 14 Oct 2019 04:19:16 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: application/json;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Access-Control-Allow-Origin</strong>: *
+                            </div>
+                            
+                            <div>
+                              <strong>Set-Cookie</strong>: SERVERID=db8459387d4f2fc1a0db5d593455728e|1571026756|1571026756;Path=/
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>json</th>
+                        <td>
+                          
+                              <pre>{&#39;data&#39;: {&#39;code&#39;: &#39;-10&#39;, &#39;info&#39;: &#39;频繁操作，请稍后重试&#39;}}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        content.data.info
+                      </td>
+                      <td>equals</td>
+                      <td>登录手机号格式不正确</td>
+                      <td>频繁操作，请稍后重试</td>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>63</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>93.01</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>91.612</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_2_3">traceback</a>
+          <div id="popup_attachment_2_3" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_2_3">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;d:\python\lib\site-packages\httprunner\api.py&#34;, line 56, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: 
+validate: content.data.info equals 登录手机号格式不正确(str)	==&gt; fail
+频繁操作，请稍后重试(str) equals 登录手机号格式不正确(str)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;d:\python\lib\site-packages\httprunner\api.py&#34;, line 58, in test
+    self.fail(str(ex))
+AssertionError: 
+validate: content.data.info equals 登录手机号格式不正确(str)	==&gt; fail
+频繁操作，请稍后重试(str) equals 登录手机号格式不正确(str)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>
