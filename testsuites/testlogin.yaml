@@ -1,10 +1,9 @@
 config:
     name: create users with uid
-    base_url: "http://www.cfcc.cc"
+    base_url: "http://192.168.199.145"
 
 testcases:
-  用户登录:
-    testcase: testcases/user_login1.yaml
 
-  商家登录:
-    testcase: testcases/admin_login.yaml
+  用户修改密码:
+    testcase: testcases/user_chagepassword.yaml
+

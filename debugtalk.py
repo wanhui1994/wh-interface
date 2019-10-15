@@ -1,5 +1,7 @@
-import os,time,csv
+#coding=utf-8
+import os,time,csv,sys
 from os import path
+import pymssql
 
 
 def ENV(keyname):
@@ -8,15 +10,15 @@ def ENV(keyname):
     return value
 
 def slepp_t(t):
-    '''设置用例等待时长'''
     time.sleep(t)
 
 def get_csv(a,num1,num2):
+    '''获取csv数据'''
     d = path.dirname(__file__)
     path1=d+"/data/"+a
     with open(path1, 'r') as csvfile:
         reader = csv.reader(csvfile)
         rows=[row for row in reader]
-        # print(rows)
-        # print(rows[num1][num2])
         return rows[num1][num2]
+def mysql():
+     print ()

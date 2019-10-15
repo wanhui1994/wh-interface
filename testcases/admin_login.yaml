@@ -14,10 +14,10 @@
         user: ${get_csv($path,6,0)}
         psw:  ${get_csv($path,6,1)}
     setup_hooks:
-      - ${slepp_t($t)}
+      - ${slepp_t($t)}de", 200]
+            - eq: ["content.d
     validate:
-    - eq: ["status_code", 200]
-    - eq: ["content.data.info", 请求成功]
+    - eq: ["status_coata.info", 请求成功]
 
 - test:
     name: 成功登录
